@@ -23,8 +23,6 @@ const HomePage = () => {
         (surveyPage - 1) * itemsPerPage,
         surveyPage * itemsPerPage
     );
- git config --global user.email "ridazainabbukhari4@example.com"
-  git config --global user.name "Rida Zainab Bukhari"
     return (
         <div className="space-y-6">
             <h1 className="text-3xl font-bold text-gray-900">Dashboard Overview Test</h1>
