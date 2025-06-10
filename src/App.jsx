@@ -1,8 +1,10 @@
+// src/App.jsx
 import React, { useState } from 'react';
 import Sidebar from './components/Layout/Sidebar';
 import Header from './components/Layout/Header';
 import HomePage from './pages/Home';
 import UsersPage from './pages/Users';
+import LeadsPage from './pages/Leads';
 import AnalyticsPage from './pages/Analytics';
 import SettingsPage from './pages/Settings';
 import './App.css';
@@ -17,6 +19,8 @@ function App() {
         return <HomePage />;
       case 'users':
         return <UsersPage />;
+      case 'leads':
+        return <LeadsPage />;
       case 'analytics':
         return <AnalyticsPage />;
       case 'settings':

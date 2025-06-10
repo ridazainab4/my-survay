@@ -1,10 +1,12 @@
+// src/components/Layout/Sidebar.jsx
 import React from 'react';
-import { Home, Users, BarChart3, Settings, Menu, X } from 'lucide-react';
+import { Home, Users, BarChart3, Settings, Menu, X, Target } from 'lucide-react';
 
 const Sidebar = ({ currentPage, setCurrentPage, sidebarOpen, setSidebarOpen }) => {
   const navigation = [
     { name: 'Home', icon: Home, id: 'home' },
     { name: 'Users', icon: Users, id: 'users' },
+    { name: 'Leads', icon: Target, id: 'leads' },
     { name: 'Analytics', icon: BarChart3, id: 'analytics' },
     { name: 'Settings', icon: Settings, id: 'settings' }
   ];
