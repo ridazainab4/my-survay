@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import Sidebar from './components/Layout/Sidebar';
 import Header from './components/Layout/Header';
 import HomePage from './pages/Home';
-import UsersPage from './pages/Users';
+import SurveysPage from './pages/Surveys';
+import SurveyBuilder from './pages/SurveyBuilder';
 import LeadsPage from './pages/Leads';
 import AnalyticsPage from './pages/Analytics';
 import SettingsPage from './pages/Settings';
@@ -17,8 +18,10 @@ function App() {
     switch(currentPage) {
       case 'home':
         return <HomePage />;
-      case 'users':
-        return <UsersPage />;
+      case 'surveys':
+        return <SurveysPage onNavigate={setCurrentPage} />;
+      case 'survey-builder':
+        return <SurveyBuilder onBack={() => setCurrentPage('surveys')} />;
       case 'leads':
         return <LeadsPage />;
       case 'analytics':
